@@ -64,7 +64,6 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println(string(buf))
 	var raw CovidData
 	err = json.Unmarshal(buf, &raw)
 
